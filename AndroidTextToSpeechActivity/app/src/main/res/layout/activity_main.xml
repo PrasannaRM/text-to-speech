@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="100dp"
+    tools:context=".TextToSpeechActivity"
+    android:transitionGroup="true">
+
+    <TextView android:text="Text to Speech" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Base.TextAppearance.AppCompat" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="77dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="77dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="46dp"
+        android:hint="Enter Text"
+        android:textColor="#0a25ed"
+        android:textColorHint="#464245" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="5.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="1.0dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="46dp" >
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="Clear"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/speak"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="Speak"
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
